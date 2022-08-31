@@ -1,13 +1,73 @@
-body {
+*,
+::after,
+::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 0.875rem;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: 0.1rem;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+.nav-center {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(-0.25rem);
+  font-family: "Poppins", sans-serif;
+}
+.count-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #2680c0;
+  padding-top: 1rem;
+}
+.counters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.counter-color {
+  color: #d23669;
+  font-size: calc(10px + 2vmin);
+}
+.btn {
+  background: #d23669;
+  color: #fff;
+  padding: 0.3rem;
+  border-radius: 3px;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease-out;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.api-data {
+  color: #61dafb;
+  padding: 1.2rem;
+  padding-bottom: 0.45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
